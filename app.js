@@ -30,7 +30,7 @@ if(favFoodGuess === 'yes' || favFoodGuess === 'y') {
 var consoleGuess = prompt('Time for the third question ' + userName + '! Is my favorite gaming console the PS Vita?');
 consoleGuess = consoleGuess.toLowerCase();
 if(consoleGuess === 'no' || consoleGuess === 'n') {
-  alert('You got that one right! I belive you can\'t beat the processing power and controlls of a PC.');
+  alert('You got that one right! I belive that you can\'t beat the processing power and controlls of a PC.');
   userPoints++;
   console.log(userName + ' guessed my favorite gaming console correctly and now has ' + userPoints + ' points.');
 } else {
