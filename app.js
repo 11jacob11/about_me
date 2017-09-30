@@ -59,6 +59,42 @@ if(gameGuess === 'no' || gameGuess === 'n') {
   alert('Nope, I play the \'mostly\' sci-fi version of the game \"Warhammer: 40,000\"');
   console.log(userName + ' guessed my miniature game incorrectly and now has ' + userPoints + ' points.')
 }
+//question 6
+var numGuess;
+for(var guesses = 4; guesses > 0; guesses--) {
+  numGuess = prompt('What is my favorite number? You have four guesses.');
+  numGuess = parseInt(numGuess);
+  if(numGuess < 12) {
+    alert('Sorry too low.');
+  } else if(numGuess === 12) {
+    alert('Good guess!');
+    guesses = 0;
+    userPoints++;
+  } else {
+    alert('Sorry too high');
+  }
+}
+if(guesses === 0) {
+  alert('Sorry, you ran out of guesses. The correct number was 12');
+}
+//question 7
+var statesLived = ['oregon', 'utah'];
+var guesses2 = 6
+while(guesses2 > 0) {
+  var stateGuess = prompt('What is a state that I have lived in besides Washington?');
+  stateGuess = stateGuess.toLowerCase();
+  console.log(stateGuess);
+  if((stateGuess === statesLived[0]) || (stateGuess === statesLived[1])) {
+    alert('Correct! I\'ve lived in Oregon, Utah as well as Washington');
+    guesses2 = 0;
+    console.log(user + ' guessed a state I lived in correctly');
+  }
+  guesses2--;
+  if(guesses2 === 0) {
+    alert('Too bad. You\'re out of guesses')
+    console.log(user + ' didn\'t guess a state I\'ve lived in previously')
+  }
+}
 //Result 0
 if(userPoints === 0) {
   alert('what?! You didn\'t get a single one right? You really need to catch up on your Jacob lore.');
@@ -73,13 +109,21 @@ if(userPoints === 2) {
 }
 //Result 3
 if(userPoints === 3) {
-  alert('Nice! you know me as some of my relatives');
+  alert('You did well, but you still have much to learn.');
 }
-//Result 4
+//result 4
 if(userPoints === 4) {
+  alert('Nice! you know me as well as some of my relatives.')
+}
+//result 5
+if(userPoints === 5) {
+  alert('Nice one! 5/7 isn\'t bad')
+}
+//Result 6
+if(userPoints === 6) {
   alert('Only one wrong, that\'s something to be proud of');
 }
-//Result 5
-if(userPoints === 5) {
+//Result 7
+if(userPoints === 7) {
   alert('Woot! You got all the questions right!');
 }

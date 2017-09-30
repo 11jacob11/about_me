@@ -1,9 +1,43 @@
-* {
+ * {
   font-family: sans-serif;
-  background-color: light-blue;
+  background: lightblue;
+  background: linear-gradient(to top right, yellow, red);
 }
 
 h1 {
-  color: black;
+  background: none;
+  color: darkblue;
   text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  background: none;
+  color: #133263;
+}
+
+h3 {
+  background: none;
+  color: #133263;
+}
+
+p {
+  background: none;
+  color: blue;
+}
+
+ul {
+  background: none;
+  color: blue;
+}
+
+li {
+  background: none;
+  color: blue;
+}
+
+/*me getting distracted*/
+::selection {
+  color: gold;
+  background: black;
 }
