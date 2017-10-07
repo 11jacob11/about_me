@@ -79,20 +79,22 @@ if(guesses === 0) {
 }
 //question 7
 var statesLived = ['oregon', 'utah'];
-var guesses2 = 6
+var guesses2 = 6;
 while(guesses2 > 0) {
   var stateGuess = prompt('What is a state that I have lived in besides Washington?');
   stateGuess = stateGuess.toLowerCase();
   console.log(stateGuess);
+  if(guesses2 === 0) {
+    alert('Too bad. You\'re out of guesses');
+    console.log(user + ' didn\'t guess a state I\'ve lived in previously');
+  }
+  guesses2--;
   if((stateGuess === statesLived[0]) || (stateGuess === statesLived[1])) {
     alert('Correct! I\'ve lived in Oregon, Utah as well as Washington');
     guesses2 = 0;
     console.log(user + ' guessed a state I lived in correctly');
-  }
-  guesses2--;
-  if(guesses2 === 0) {
-    alert('Too bad. You\'re out of guesses')
-    console.log(user + ' didn\'t guess a state I\'ve lived in previously')
+  }else if(stateGuess !== statesLived[0] && stateGuess !== statesLived[1]) {
+    alert('Sorry, but that isn\'t right, you have ' + guesses2 + ' guesses remaining.');
   }
 }
 //Result 0
@@ -113,11 +115,11 @@ if(userPoints === 3) {
 }
 //result 4
 if(userPoints === 4) {
-  alert('Nice! you know me as well as some of my relatives.')
+  alert('Nice! you know me as well as some of my relatives.');
 }
 //result 5
 if(userPoints === 5) {
-  alert('Nice one! 5/7 isn\'t bad')
+  alert('Nice one! 5/7 isn\'t bad');
 }
 //Result 6
 if(userPoints === 6) {

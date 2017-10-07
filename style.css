@@ -1,7 +1,6 @@
- * {
+* {
   font-family: sans-serif;
-  background: lightblue;
-  background: linear-gradient(to top right, yellow, red);
+  background-color: darkblue;
 }
 
 h1 {
@@ -13,27 +12,27 @@ h1 {
 
 h2 {
   background: none;
-  color: #133263;
+  color: brown;
 }
 
 h3 {
   background: none;
-  color: #133263;
+  color: brown;
 }
 
 p {
   background: none;
-  color: blue;
+  color: #c68925;
 }
 
 ul {
   background: none;
-  color: blue;
+  color: #c68925;
 }
 
 li {
   background: none;
-  color: blue;
+  color: #c68925;
 }
 
 /*me getting distracted*/
