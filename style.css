@@ -1,0 +1,42 @@
+* {
+  font-family: sans-serif;
+  background-color: darkblue;
+}
+
+h1 {
+  background: none;
+  color: darkblue;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  background: none;
+  color: brown;
+}
+
+h3 {
+  background: none;
+  color: brown;
+}
+
+p {
+  background: none;
+  color: #c68925;
+}
+
+ul {
+  background: none;
+  color: #c68925;
+}
+
+li {
+  background: none;
+  color: #c68925;
+}
+
+/*me getting distracted*/
+::selection {
+  color: gold;
+  background: black;
+}
